@@ -1,5 +1,5 @@
 {
-  "name": "objection-example-express-es7",
+  "name": "objection-example",
   "version": "0.8.0",
   "description": "Simple Object.js ORM example copied from Vincit/objection.js",
   "main": "app.js",
