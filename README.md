@@ -5,6 +5,26 @@ This example was copied from folder [examples/express-es7](https://github.com/Vi
 
 The original client code that makes HTTP requests is in [client.js](client.js) but for this demo we are going to use [Cypress Test Runner](https://github.com/cypress-io/cypress) with [@bahmutov/cy-api](https://github.com/bahmutov/cy-api) plugin.
 
+![Tests](images/people.png)
+
+## Install
+
+```shell
+npm ci
+```
+
+## Run
+
+To start local server and open Cypress
+
+```shell
+npm run dev
+```
+
+## Tests
+
+TODO
+
 ## More info
 
 - Read ["Black box API testing with server logs"](https://glebbahmutov.com/blog/api-testing-with-sever-logs/) post.
