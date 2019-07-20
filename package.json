@@ -38,7 +38,7 @@
     "express": "4.17.1",
     "express-promise-router": "3.0.3",
     "knex": "0.14.6",
-    "lodash": "^4.17.4",
+    "lodash": "4.17.13",
     "morgan": "1.9.1",
     "objection": "1.6.9",
     "sqlite3": "4.0.9"
