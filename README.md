@@ -32,3 +32,17 @@ TODO
 
 [renovate-badge]: https://img.shields.io/badge/renovate-app-blue.svg
 [renovate-app]: https://renovateapp.com/
+
+### Small print
+
+Author: Gleb Bahmutov &lt;gleb.bahmutov@gmail.com&gt; &copy; 2019
+
+- [@bahmutov](https://twitter.com/bahmutov)
+- [glebbahmutov.com](https://glebbahmutov.com)
+- [blog](https://glebbahmutov.com/blog)
+
+Original License: See [github.com/Vincit/objection.js](https://github.com/Vincit/objection.js)
+Additions showing logs and Cypress tests under MIT License - do anything with the code, but don't blame me if it does not work.
+
+Support: if you find any problems with this module, email / tweet /
+[open issue](https://github.com/bahmutov/objection-example/issues) on Github
