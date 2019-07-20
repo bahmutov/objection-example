@@ -4,6 +4,11 @@
 /// <reference types="@bahmutov/cy-api" />
 
 describe('Movie ⭐️s', () => {
+  beforeEach(() => {
+    // we need to remove any old data from the database
+    cy.task('resetDb')
+  })
+
   it('are people too', () => {
     cy.api(
       {
@@ -17,7 +22,6 @@ describe('Movie ⭐️s', () => {
       },
       'Stallone'
     )
-    return
 
     cy.api(
       {

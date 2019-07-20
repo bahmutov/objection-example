@@ -28,3 +28,4 @@ TODO
 ## More info
 
 - Read ["Black box API testing with server logs"](https://glebbahmutov.com/blog/api-testing-with-sever-logs/) post.
+- see another example [server-logs-example](https://github.com/bahmutov/server-logs-example)
