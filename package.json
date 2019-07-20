@@ -7,7 +7,9 @@
     "migrate": "knex migrate:latest",
     "build": "babel src -d build",
     "start": "npm run build && npm run migrate && node build/app",
-    "dev": "start-test start http://localhost:8641/persons cy:open",
+    "start:logs": "npm run build && npm run migrate && node -r @bahmutov/all-logs build/app",
+    "dev": "start-test start:logs http://localhost:8641/persons cy:open",
+    "dev:no-logs": "start-test start http://localhost:8641/persons cy:open",
     "cy:open": "cypress open"
   },
   "babel": {
@@ -26,6 +28,7 @@
   "author": "Sami Koskimäki",
   "license": "MIT",
   "dependencies": {
+    "@bahmutov/all-logs": "1.7.1",
     "axios": "^0.18.0",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",

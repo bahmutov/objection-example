@@ -17,6 +17,7 @@ describe('Movie ⭐️s', () => {
       },
       'Stallone'
     )
+    return
 
     cy.api(
       {
