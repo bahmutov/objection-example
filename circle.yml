@@ -1,9 +1,18 @@
 version: 2.1
 orbs:
   cypress: cypress-io/cypress@1
+executors:
+  node8:
+    docker:
+      # https://github.com/cypress-io/cypress-docker-images
+      - image: 'cypress/base:8.9.3-npm-6.10.1'
 workflows:
   build:
     jobs:
       - cypress/run:
+          # due to built-in Node task we need to use same Node version
+          # as Cypress bundled note, until system Node feature lands
+          executor: node8
           start: npm run start:logs
           wait-on: 'http://localhost:8641/persons'
+          no-workspace: true
