@@ -1,5 +1,9 @@
 /// <reference types="@bahmutov/cy-api" />
 
+import { fixCypressSpec } from '../support'
+
+beforeEach(fixCypressSpec(__filename))
+
 beforeEach(() => {
   // we need to remove any old data from the database
   cy.task('resetDb')
