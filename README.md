@@ -1,7 +1,7 @@
 # objection-example [![renovate-app badge][renovate-badge]][renovate-app] [![CircleCI](https://circleci.com/gh/bahmutov/objection-example/tree/master.svg?style=svg)](https://circleci.com/gh/bahmutov/objection-example/tree/master)
 > Simple Object.js ORM example copied from Vincit/objection.js
 
-This example was copied from folder [examples/express-es7](https://github.com/Vincit/objection.js/tree/master/examples/express-es7) of [github.com/Vincit/objection.js](https://github.com/Vincit/objection.js)
+This example was copied from folder [examples/express-es7](https://github.com/Vincit/objection.js/tree/master/examples/express-es7) of [github.com/Vincit/objection.js](https://github.com/Vincit/objection.js). See [Objection.js docs](https://vincit.github.io/objection.js/)
 
 The original client code that makes HTTP requests is in [client.js](client.js) but for this demo we are going to use [Cypress Test Runner](https://github.com/cypress-io/cypress) with [@bahmutov/cy-api](https://github.com/bahmutov/cy-api) plugin.
 
@@ -23,7 +23,10 @@ npm run dev
 
 ## Tests
 
-TODO
+There are several specs in [cypress/integration](cypress/integration) folder
+
+- [movies-spec.js](cypress/integration/movies-spec.js) shows how to add a new movie, and how the API checks for required fields to be present
+- [spec.js](cypress/integration/spec.js) shows complex calls to insert multiple entities in a single call, updating multiple objects using "upsert"
 
 ## More info
 
