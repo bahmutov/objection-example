@@ -1,4 +1,11 @@
 {
   "baseUrl": "http://localhost:8641/",
-  "viewportHeight": 900
+  "viewportHeight": 900,
+  "ignoreTestFiles": [
+    "**/__snapshots__/*",
+    "**/__image_snapshots__/*"
+  ],
+  "env": {
+    "cypress-plugin-snapshots": {}
+  }
 }

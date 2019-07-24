@@ -8,8 +8,7 @@
 // https://on.cypress.io/plugins-guide
 // ***********************************************************
 
-// This function is called when a project is opened or re-opened (e.g. due to
-// the project's config changing)
+const { initPlugin } = require('cypress-plugin-snapshots/plugin')
 const { Model } = require('objection')
 const knexConfig = require('../../knexfile')
 const Knex = require('knex')
@@ -24,6 +23,8 @@ const Animal = require('../../build/models/Animal').default
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
+  initPlugin(on, config) // snapshots plugin
+
   on('task', {
     resetDb () {
       console.log('resetting database')
