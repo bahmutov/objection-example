@@ -1,6 +1,7 @@
 import { transaction } from 'objection'
 import Person from './models/Person'
 import Movie from './models/Movie'
+const verbose = require('util').debuglog('verbose')
 
 export default router => {
   // Create a new Person. Because we use `insertGraph` you can pass relations
@@ -184,6 +185,17 @@ export default router => {
 
   router.post('/movies', async (req, res) => {
     const movie = await Movie.query().insert(req.body)
+    res.send(movie)
+  })
+
+  router.get('/movies/:id', async (req, res) => {
+    verbose('searching movie by id', req.params.id)
+    const movie = await Movie.query().findById(req.params.id)
+
+    if (!movie) {
+      throw createStatusCodeError(404)
+    }
+
     res.send(movie)
   })
 }
