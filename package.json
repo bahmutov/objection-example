@@ -40,7 +40,7 @@
     "knex": "0.20.9",
     "lodash": "4.17.15",
     "morgan": "1.9.1",
-    "objection": "1.6.11",
+    "objection": "2.2.15",
     "sqlite3": "4.1.1"
   },
   "devDependencies": {
