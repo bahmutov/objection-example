@@ -41,7 +41,7 @@
     "lodash": "4.17.15",
     "morgan": "1.9.1",
     "objection": "1.6.11",
-    "sqlite3": "4.1.1"
+    "sqlite3": "5.1.6"
   },
   "devDependencies": {
     "@bahmutov/cy-api": "1.4.1",
